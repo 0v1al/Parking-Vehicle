@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.7;
+	overflow: none;
+}
+
+body, html {
+	/* background: rgb(245, 245, 245); */
+	background-image: linear-gradient(to right top, #ffffff, #fbfbfb, #f6f6f6, #f2f2f2, #eeeeee);
+	overflow: none;
+}
+
+/*admin icon form top-right and setting, logout, change password*/
+.nav_logout {
+	position: absolute;
+	right: 3rem;
+	top: .6rem;
+	z-index: 2;
+	font-size: 1.1rem;
+	text-decoration: none;
+	color: rgb(20, 138, 181);
+}
+
+.admin_icon_menu {
+	position: absolute;
+	width: 10rem;
+	background-color: #fff;
+	list-style-type: none;
+	right: -2.5rem;
+	border-radius: .1rem;
+	display: none;
+}
+
+.admin_icon_menu li {
+	padding: .5rem;
+	cursor: pointer;
+	transition: .2s all ease-in-out;
+}
+
+.admin_icon_menu li a {
+	font-size: .9rem;
+}
+
+.admin_icon_menu li:hover {
+	background-color: rgb(245, 252, 255);
+}
+
+.nav_logout .admin_icon {
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.nav_logout a:hover {
+	text-decoration: none;
+	color: rgb(20, 138, 181);
+}
+
+
+/*left menu*/
+.nav_menu_left {
+	background-color: #fff;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	top: 1.1rem;
+	border: none;
+	z-index: 0;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	box-shadow: .1rem 0 .3rem 0 rgba(0, 0, 0, .1);
+}
+ 
+.nav_menu_left ul {
+	position: absolute;
+	top: 2rem;
+	list-style-type: none;
+	width: 100%;
+
+}
+
+.nav_menu_left ul li i {
+	color: rgb(20, 138, 181);
+	margin-right: .7rem;
+}
+.nav_menu_left ul li i.arrow {
+	position: absolute;
+	top: .9rem;
+	right: .1rem;
+}
+.nav_menu_left ul li {
+	cursor: pointer;
+	transition: .1s all ease-in-out;
+	padding: .5rem 0 .5rem 2rem;
+	position: relative;
+	border-bottom: .1rem solid rgba(20, 138, 181, .1);
+}
+
+.nav_menu_left ul li:hover {
+	background-color: rgb(245, 252, 255);
+	transform: scale(1.1);
+}
+
+.nav_menu_left ul li a {
+	text-decoration: none;
+	color: rgb(20, 138, 181);
+}
+
+.nav_menu_left ul li a:hover {
+	color: rgb(20, 138, 181);
+}
+
+/*utilities*/
+.active {
+	background-color: rgb(245, 252, 255);
+}
+
+.show {
+	display: block;
+}
