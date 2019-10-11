@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/*admin icon form top-right and setting, logout, change password*/
+.nav_logout {
+	position: absolute;
+	right: 3rem;
+	top: .6rem;
+	z-index: 2;
+	font-size: 1.1rem;
+	text-decoration: none;
+	color: rgb(20, 138, 181);
+}
+
+.admin_icon_menu {
+	position: absolute;
+	width: 10rem;
+	background-color: #fff;
+	list-style-type: none;
+	right: -2.5rem;
+	border-radius: .1rem;
+	display: none;
+	box-shadow: .1rem .1rem .3rem 0 rgba(0, 0, 0, .1);
+}
+
+.admin_icon_menu li {
+	padding: .5rem;
+	cursor: pointer;
+	transition: .2s all ease-in-out;
+}
+
+.admin_icon_menu li a {
+	font-size: .9rem;
+}
+
+.admin_icon_menu li:hover {
+	background-color: rgb(245, 252, 255);
+}
+
+.nav_logout .admin_icon {
+	font-size: 1.7rem;
+	cursor: pointer;
+}
+
+.nav_logout a:hover {
+	text-decoration: none;
+	color: rgb(20, 138, 181);
+}
+
+/*utilities*/
+.active {
+	background-color: rgb(245, 252, 255);
+}
+
+.show {
+	display: block;
+}

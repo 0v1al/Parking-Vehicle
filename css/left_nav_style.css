@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.7;
+	overflow: none;
+}
+
+body, html {
+	/* background: rgb(245, 245, 245); */
+	background-image: linear-gradient(to right top, #ffffff, #fbfbfb, #f6f6f6, #f2f2f2, #eeeeee);
+	overflow: none;
+}
+
+.nav_menu_left {
+	background-color: #fff;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	top: -2rem;
+	border: none;
+	z-index: 0;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	box-shadow: .1rem 0 .3rem 0 rgba(0, 0, 0, .1);
+}
+
+.nav_menu_left > ul {
+	position: relative;
+	top: -11rem;
+	list-style-type: none;
+	width: 115%;
+	height: 16.5rem;
+	/*border: 1px solid black;*/
+}
+
+.nav_menu_left > ul li i {
+	color: rgb(20, 138, 181);
+	margin-right: .7rem;
+}
+.nav_menu_left > ul li i.arrow {
+	position: absolute;
+	top: .9rem;
+	right: .1rem;
+	transition: .2s all ease-in-out;
+}
+.nav_menu_left > ul li {
+	cursor: pointer;
+	transition: .1s all ease-in-out;
+	padding: .5rem 0 .5rem 2rem;
+	position: relative;
+	width: 100%;
+	transition: .2s all ease-in-out;
+}
+
+.nav_menu_left > ul li:not(.first) {
+	border-top: .1rem solid rgba(20, 138, 181, .1);
+}
+
+.nav_menu_left > ul li:hover {
+	background-color: rgb(245, 252, 255);
+	transform: scale(1.1);
+}
+
+.nav_menu_left > ul li a {
+	text-decoration: none;
+	color: rgb(20, 138, 181);
+	font-size: .9rem;
+}
+
+.nav_menu_left > ul li a:hover {
+	color: rgb(20, 138, 181);
+}
+
+.active {
+	background-color: rgb(245, 252, 255);
+}
+
+.show {
+	display: block;
+}
+
+/*.green {
+	color: rgb(0, 139, 0);
+}
+
+.yellow {
+	color: rgb(241, 185, 0);
+}
+
+.violet {
+	color: rgb(156, 0, 156);
+}
+
+.blue {
+	color: rgb(20, 138, 181);
+}*/
+
+/*submenu*/
+.submenu {
+	position: relative;
+	margin-top: .5rem;
+	list-style-type: none;
+	width: 100%;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	overflow: hidden;
+	display: none;
+}
+
+.open_submenu {
+	display: block;
+}
+
+.arrow_rotate {
+	transform: rotate(90deg);
+}

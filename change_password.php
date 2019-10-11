@@ -1,6 +1,6 @@
 <?php 
 
-  require './conn.php';
+  require './components/conn.php';
 
   $admin_current_password = $admin_new_password = $admin_confirm_new_password = '';
   $change_password_error = array();
@@ -67,7 +67,7 @@
 <body>
 
 
-  <?php require './nav.php' ?>
+  <?php require './components/nav.php' ?>
 
   <span class="nav_logout">
 		<i class="fas fa-user-circle admin_icon"></i>

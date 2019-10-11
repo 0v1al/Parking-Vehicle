@@ -5,11 +5,12 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./css/nav_style.css">
 	<link rel="stylesheet" type="text/css" href="./css/index_style.css">
+	<link rel="stylesheet" type="text/css" href="./css/left_nav_style.css">
 	<script src="https://kit.fontawesome.com/99c8254f42.js"></script>
 	<title></title>
 </head>
 <body>
-	<?php require './nav.php'; ?>
+	<?php require './components/nav.php'; ?>
 
 	<span class="nav_logout">
 		<i class="fas fa-user-circle admin_icon"></i>
@@ -20,38 +21,57 @@
 	</span>
 
 	<main class="row">
-		<nav class="nav_menu_left container col-md-2">
-			<ul>
-				<li class="active">
-					<i class="fas fa-table"></i>
-					<a href="#">Dashboard</a>
-				</li>
-				<li>
-					<i class="fas fa-car-alt"></i>
-					<a href="#">Vehicle Category</a>
-					<i class="fas fa-chevron-right arrow"></i>
-				</li>
-				<li>
-					<i class="fas fa-plus-square"></i>
-					<a href="#">Add Vehicle</a>
-				</li>
-				<li>
-					<i class="fas fa-tasks"></i>
-					<a href="#">Manage Vehicle</a>
-					<i class="fas fa-chevron-right arrow"></i>
-				</li>
-				<li>
-					<i class="fas fa-exclamation-circle"></i>
-					<a href="#">Reports</a><i class="fas fa-chevron-right arrow"></i>
-				</li>
-				<li>
-					<i class="fas fa-search"></i>
-					<a href="#">Search Vehicle</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="col-md-10">
-			
+		<?php require './components/left_nav.php' ?>
+		<div class="col-md-10 left_side">
+			<div class="dashboard">
+				<h1 class="dashboard_header">Dashboard</h1>
+				<div class="row container cars_info">
+					<div class="col-md-3 car_info">
+						<div class="row">
+							<div class="col-md-6">
+								<i class="fas fa-car car_icon blue"></i>
+							</div>
+							<div class="col-md-6 car_info_right">
+								<p class="car_info_number">1</p>
+								<p>Todays Vehicle Entries</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 car_info">
+						<div class="row">
+							<div class="col-md-6">
+								<i class="fas fa-car car_icon green"></i>
+							</div>
+							<div class="col-md-4 car_info_right">
+								<p class="car_info_number">2</p>
+								<p>Yesterdays Vehicle Entries</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 car_info">
+						<div class="row">
+							<div class="col-md-6">
+								<i class="fas fa-car car_icon violet"></i>
+							</div>
+							<div class="col-md-6 car_info_right">
+								<p class="car_info_number">3</p>
+								<p>Last 7 Days Vehicle Entries</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 car_info">
+						<div class="row">
+							<div class="col-md-6">
+								<i class="fas fa-car car_icon yellow"></i>
+							</div>
+							<div class="col-md-6 car_info_right">
+								<p class="car_info_number">4</p>
+								<p>Total Vehicle Entries</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		
 	</main>

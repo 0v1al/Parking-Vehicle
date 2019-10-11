@@ -51,7 +51,7 @@ body, html {
 }
 
 .nav_logout .admin_icon {
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	cursor: pointer;
 }
 
@@ -62,7 +62,7 @@ body, html {
 
 
 /*left menu*/
-.nav_menu_left {
+./*nav_menu_left {
 	background-color: #fff;
 	position: relative;
 	width: 100%;
@@ -76,7 +76,7 @@ body, html {
 	justify-content: center;
 	box-shadow: .1rem 0 .3rem 0 rgba(0, 0, 0, .1);
 }
- 
+
 .nav_menu_left ul {
 	position: absolute;
 	top: 2rem;
@@ -110,10 +110,67 @@ body, html {
 .nav_menu_left ul li a {
 	text-decoration: none;
 	color: rgb(20, 138, 181);
+	font-size: .9rem;
 }
 
 .nav_menu_left ul li a:hover {
 	color: rgb(20, 138, 181);
+}*/
+
+
+
+/*?right side dashboard, first page*/
+
+.left_side {
+	margin-top: 0rem;
+}
+
+.dashboard {
+	margin: 3rem 0 0 2rem;
+	color: rgb(20, 138, 181) !important;
+}
+
+.dashboard .cars_info {
+	margin-top: 4rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.dashboard .cars_info .car_info {
+	background-color: #fff;
+	max-width: 15rem;
+	margin: .5rem;
+	border-radius: .2rem;
+	padding: 1rem;
+	box-shadow: .1rem .1rem .3rem 0 rgba(0, 0, 0, .1);
+}
+
+.car_icon {
+	font-size: 2.5rem;
+}
+
+.car_info_right {
+	margin-left: 4rem;
+	margin-top: -3rem;
+	font-size: 1rem;
+	min-width: 10.8rem;
+}
+
+.car_info_number {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.dashboard_header {
+	font-size: 1.3rem;
+	font-weight: bold;
+	background-color: #fff;
+	padding: .7rem 1rem;
+	border-radius: .2rem;
+	box-shadow: .1rem .1rem .3rem 0 rgba(0, 0, 0, .1);
+	width: 96.5%;
 }
 
 /*utilities*/
@@ -123,4 +180,20 @@ body, html {
 
 .show {
 	display: block;
+}
+
+.green {
+	color: rgb(0, 139, 0);
+}
+
+.yellow {
+	color: rgb(241, 185, 0);
+}
+
+.violet {
+	color: rgb(156, 0, 156);
+}
+
+.blue {
+	color: rgb(20, 138, 181);
 }

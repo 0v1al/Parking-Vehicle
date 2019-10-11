@@ -1,6 +1,6 @@
 <?php 
   
-  require './conn.php';
+  require './components/conn.php';
 
   // //select data from database table
   // $sql = "SELECT admin_email, admin_password FROM admin";
@@ -73,7 +73,7 @@
   </head>
   <body>
 
-    <?php require './nav.php' ?>
+    <?php require './components/nav.php' ?>
 
     <main>
       <form action="login.php" method="POST" accept-charset="utf-8">
