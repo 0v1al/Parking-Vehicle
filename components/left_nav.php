@@ -10,34 +10,34 @@
 					<i class="fas fa-chevron-right arrow"></i>
 					<ul class="submenu">
 						<li><a href="./add_vehicle_category.php">Add Category</a></li>
-						<li><a href="#">Manage Category</a></li>
+						<li><a href="./manage_vehicle_category.php">Manage Category</a></li>
 					</ul>
 				</li>
 				<li>
 					<i class="fas fa-plus-square"></i>
-					<a href="#">Add Vehicle</a>
+					<a href="./add_vehicle.php">Add Vehicle</a>
 				</li>
 				<li class="submenu_toggler">
 					<i class="fas fa-tasks"></i>
 					<a href="#">Manage Vehicle</a>
 					<i class="fas fa-chevron-right arrow"></i>
 					<ul class="submenu">
-						<li><a href="#">Add Category</a></li>
-						<li><a href="#">Manage Category</a></li>
+						<li><a href="./manage_vehicle.php">Manage Vehicle</a></li>
+						<li><a href="./manage_out_vehicle.php">Manage Out Vehicle</a></li>
 					</ul>
 				</li>
 				<li class="submenu_toggler">
 					<i class="fas fa-exclamation-circle"></i>
 					<a href="#">Reports</a>
-					<i class="fas fa-chevron-right arrow"></i>
+<!-- 					<i class="fas fa-chevron-right arrow"></i>
 					<ul class="submenu">
 						<li><a href="#">Report vehicle</a></li>
 						<li><a href="#">Manage Category</a></li>
-					</ul>
+					</ul> -->
 				</li>
 				<li>
 					<i class="fas fa-search"></i>
-					<a href="#">Search Vehicle</a>
+					<a href="./search_vehicle.php">Search Vehicle</a>
 				</li>
 			</ul>
 		</nav>

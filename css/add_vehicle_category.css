@@ -58,7 +58,7 @@ input:focus{
 }
 
 .submit_btn {
-	margin-top: 1rem;
+	margin-top: 1.7rem;
 	border: none;
 	outline: none;
 	border-radius: .1rem;
@@ -67,6 +67,7 @@ input:focus{
 	padding: .4rem .9rem;
 	font-weight: bold;
 	transition: .2s all ease-in-out;
+	font-size: .9rem;
 }
 
 .submit_btn:hover {

@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.7;
+}
+
+body, html {
+	background: rgb(245, 245, 245);
+	overflow-x: none;
+}
+
+/*dashboard*/
+
+.side-right-container {
+	margin-top: 3rem;
+	margin-left: 2rem;
+}
+
+.table {
+	margin-top: 3rem !important;
+}
+
+.dashboard_header {
+	font-size: 1.2rem;
+	font-weight: bold;
+	background-color: #fff;
+	padding: .7rem 1rem;
+	border-radius: .2rem;
+	box-shadow: .1rem .1rem .3rem 0 rgba(0, 0, 0, .1);
+	width: 96.5%;
+	color: rgb(20, 138, 181);
+}
+.subheader {
+	color: #cccccc;
+	margin-left: .1rem;
+}
+
+/*add category*/
+.add_category {
+	margin-top: 5rem;
+	width: 97%;
+	background-color: white;
+	padding: 3rem;
+	padding-bottom: 4rem;
+	border-radius: .1rem;
+	box-shadow: .1rem .1rem .3rem 0 rgba(0, 0, 0, .1);
+	display: flexbox;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+
+.form_category {
+	margin-top: 4rem;
+}
+
+.form-control {
+	width: 100%;
+}
+
+input:focus{
+    outline: none;
+}
+
+.submit_btn {
+	margin-top: 1.7rem;
+	border: none;
+	outline: none;
+	border-radius: .1rem;
+	background-color: rgb(20, 138, 181);
+	color: white;
+	padding: .4rem .9rem;
+	font-weight: bold;
+	font-size: .9rem;
+	transition: .2s all ease-in-out;
+}
+
+.submit_btn:hover {
+	background-color: rgb(27, 124, 161);
+}
+
+.add_category_header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgb(20, 138, 181);
+	color: white;
+	padding: .5rem;
+	border-top-right-radius: .1rem;
+	border-top-left-radius: .1rem;
+	height: 2.5rem;
+	width: 100%;
+	line-height: 2.5rem;
+}
+
+.add_category_header h3 {
+	font-size: 1.1rem;
+	font-weight: bold;
+	margin-left: .5rem;
+}
+
+/*alert*/
