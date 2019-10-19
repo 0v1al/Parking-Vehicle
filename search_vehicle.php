@@ -1,6 +1,6 @@
 <?php
 	require './components/conn.php';
- 
+
 	$submited = false;
 
 	function clear ($data) {
@@ -20,7 +20,7 @@
 		}
 	}
 
- ?>
+?>
 
 <!DOCTYPE html>
 <html>
@@ -63,7 +63,7 @@
 									if (in_array("The value must be an number!", $login_error_message)) {
 										echo "<span style='color:red;'>The value must be an number!</span>";
 									}
-							 	?>
+								?>
 						</form>
 				<?php
 					if (empty($login_error_message) && $submited) {
@@ -97,7 +97,7 @@
 								</table>";
 						}
 					}
-				 ?>
+				?>
 				</div>
 
 			</div>

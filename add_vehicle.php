@@ -6,7 +6,7 @@
 	date_default_timezone_set("Europe/Bucharest");
 
 	$sql_category = "SELECT * FROM vehicle_category";
-	$res_category = mysqli_query($conn, $sql_category) or die(mysqli_error());
+	$res_category = mysqli_query($conn, $sql_category) or die(mysqli_error($conn));
 
 	const MIN_VALUE = 100000;
 	const MAX_VALUE = 900000;
@@ -32,7 +32,7 @@
 		$registration_number = clear($_POST['registration_number']);
 		$owner_name = ucwords(clear($_POST['owner_name']));
 		$owner_contact = clear($_POST['owner_contact']);
-		$income_date = date("Y-m-d H:i:s");
+		$income_date = date("Y-m-d");
 	
 		if (!is_numeric($registration_number) || !is_numeric($owner_contact)) {
 			array_push($login_error_message, "Please introduce the data corectly!");
@@ -44,7 +44,7 @@
 		if (empty($login_error_message)) {
 			array_push($login_error_message, "The vehicle was added!");
 			
-			$sql = "INSERT INTO vehicle VALUES(null, '$owner_name', '$registration_number', '$owner_contact', '$vehicle_category[1]', '$vehicle_company', '$income_date')";
+			$sql = "INSERT INTO vehicle VALUES(null, '$owner_name', '$registration_number', '$owner_contact', '$vehicle_category[1]', '$vehicle_company', '$income_date', DEFAULT, '', 0, 0)";
 
 			if (!mysqli_query($conn, $sql)) echo "Error: " . $sql . mysqli_error($conn);
 	
