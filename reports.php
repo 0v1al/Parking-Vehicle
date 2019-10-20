@@ -33,7 +33,8 @@
 	<link rel="stylesheet" href="./css/left_nav_style.css">
 	<link rel="stylesheet" type="text/css" href="css/nav_style.css">
 	<link rel="stylesheet" type="text/css" href="css/nav_logout_style.css">
-	<link rel="stylesheet" type="text/css" href="css/search_vehicle.css">
+    <link rel="stylesheet" type="text/css" href="css/search_vehicle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/99c8254f42.js"></script>
 </head>
 <body>

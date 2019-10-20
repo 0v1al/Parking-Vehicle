@@ -1,55 +1,38 @@
 		<nav class="nav_menu_left container col-md-2">
 			<ul class="left_menu">
-				<li class="active first">
-					<i class="fas fa-table"></i>
-					<a href="./index.php">Dashboard</a>
+				<li class="first">		
+					<a class="link" href="./index.php"><i class="fas fa-table"></i><span class="a-txt">Dashboard</span></a>
 				</li>
 				<li class="submenu_toggler">
-					<i class="fas fa-car-alt"></i>
-					<a href="#">Vehicle Category</a>
-					<i class="fas fa-chevron-right arrow"></i>
+					<a class="link sub" href="#"><i class="fas fa-car-alt"></i><span class='a-txt'>Vehicle Category</span><i class="fas fa-chevron-right arrow"></i></a>
 					<ul class="submenu">
-						<li>
-							<i class="fas fa-plus-square"></i>
-							<a href="./add_vehicle_category.php">Add Category</a>
+						<li class="submenu_li">		
+							<a class="submenu_a link" href="./add_vehicle_category.php"><i class="fas fa-plus-square"></i><span class="a-txt">Add Category</span></a>
 						</li>
-						<li>
-							<i class="fas fa-th-list"></i>
-							<a href="./manage_vehicle_category.php">Manage Category</a>
+						<li class="submenu_li">			
+							<a class="submenu_a link" href="./manage_vehicle_category.php"><i class="fas fa-th-list"></i><span class="a-txt">Manage Category</span></a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<i class="fas fa-plus-square"></i>
-					<a href="./add_vehicle.php">Add Vehicle</a>
+					<a class="link" href="./add_vehicle.php"><i class="fas fa-plus-square"></i><span class="a-txt">Add Vehicle</span></a>
 				</li>
 				<li class="submenu_toggler">
-					<i class="fas fa-tasks"></i>
-					<a href="#">Manage Vehicle</a>
-					<i class="fas fa-chevron-right arrow"></i>
+					<a class="link sub" href="#"><i class="fas fa-tasks"></i><span class="a-txt">Manage Vehicle</<span><i class="fas fa-chevron-right arrow"></i></a>
 					<ul class="submenu">
-						<li>
-							<i class="fas fa-list-alt"></i>	
-							<a href="./manage_vehicle.php">Manage Vehicle</a>
+						<li class="submenu_li">	
+							<a class="submenu_a link" href="./manage_vehicle.php"><i class="fas fa-list-alt"></i><span class="a-txt">Manage Vehicle</span></a>
 						</li>
-						<li>
-							<i class="fas fa-list-ul"></i>
-							<a href="./manage_out_vehicle.php">Manage Out Vehicle</a>
+						<li class="submenu_li">
+							<a class="submenu_a link" href="./manage_out_vehicle.php"><i class="fas fa-list-ul"></i><span class="a-txt">Manage Out Vehicle</span></a>
 						</li>
 					</ul>
 				</li>
-				<li class="submenu_toggler">
-					<i class="fas fa-exclamation-circle"></i>
-					<a href="./reports.php">Reports</a>
-<!-- 					<i class="fas fa-chevron-right arrow"></i>
-					<ul class="submenu">
-						<li><a href="#">Report vehicle</a></li>
-						<li><a href="#">Manage Category</a></li>
-					</ul> -->
+				<li>		
+					<a class="link" href="./reports.php"><i class="fas fa-exclamation-circle"></i><span class="a-txt">Reports</span></a>
 				</li>
-				<li>
-					<i class="fas fa-search"></i>
-					<a href="./search_vehicle.php">Search Vehicle</a>
+				<li>			
+					<a class="link" href="./search_vehicle.php"><i class="fas fa-search"></i><span class="a-txt">Search Vehicle</span></a>
 				</li>
 			</ul>
 		</nav>
@@ -68,5 +51,22 @@
 				[].forEach.call(submenu_toggler, (submenu, index) => {
 					submenu.addEventListener('click', () => show_submenu(index));
 				});
+
+				const active_link = () => {
+					let path = window.location.pathname;
+					path = path.replace(/\/$/, "");
+					path = decodeURIComponent(path);
+					path = path.slice(16);
+					path = path.replace(/\./g, "");
+					$('.link').each(function() {
+						let href = $(this).attr('href');
+						href = href.replace(/\./g, "");
+						if (path.substring(0, path.length) === href) {
+							$(this).closest('a').addClass('active');
+						}
+					});
+				}
+
+				active_link();
 			})();
 		</script>

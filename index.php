@@ -48,7 +48,7 @@
 		</ul>
 	</span>
 
-	<main class="row">
+	<main class="content row">
 		<?php require './components/left_nav.php' ?>
 		<div class="col-md-10 left_side">
 			<div class="dashboard">

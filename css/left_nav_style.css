@@ -28,50 +28,65 @@ body, html {
 	flex-direction: column;
 	align-content: center;
 	justify-content: center;
+	user-select: none;
 	box-shadow: .1rem 0 .3rem 0 rgba(0, 0, 0, .1);
 }
 
 .nav_menu_left > ul {
 	position: relative;
-	top: -11rem;
+	top: -11.2rem;
 	list-style-type: none;
-	width: 115%;
+	min-width: 115%;
 	height: 16.5rem;
+	user-select: none;
 	/*border: 1px solid black;*/
 }
 
 .nav_menu_left > ul li i {
 	color: rgb(20, 138, 181);
-	margin-right: .7rem;
+	margin-left: -1rem;
+	position: absolute;
+	user-select: none;
 }
 .nav_menu_left > ul li i.arrow {
 	position: absolute;
-	top: .9rem;
-	right: .1rem;
+	right: 1rem;
 	transition: .2s all ease-in-out;
 }
 .nav_menu_left > ul li {
 	cursor: pointer;
-	transition: .1s all ease-in-out;
-	padding: .5rem 0 .5rem 2rem;
 	position: relative;
 	width: 100%;
 	transition: .2s all ease-in-out;
+	user-select: none;
+	/* border: 1px solid black; */
 }
 
 .nav_menu_left > ul li:not(.first) {
 	border-top: .1rem solid rgba(20, 138, 181, .1);
 }
 
-.nav_menu_left > ul li:hover {
-	background-color: rgb(245, 252, 255);
-	/*transform: scale(1.1);*/
+.nav_menu_left > ul li a:hover {
+	background-color: rgb(239, 248, 255);
 }
 
 .nav_menu_left > ul li a {
 	text-decoration: none;
 	color: rgb(20, 138, 181);
 	font-size: .9rem;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: .5rem 0rem .5rem 3rem;
+	margin-left: 0	rem;
+	user-select: none;
+	display: flex;
+	align-items: center;
+	/* border: 1px solid black; */
+}
+
+span.a-txt {
+	margin-left: 1rem;
 }
 
 .nav_menu_left > ul li a:hover {
@@ -79,39 +94,30 @@ body, html {
 }
 
 .active {
-	background-color: rgb(245, 252, 255);
+	background-color: rgb(239, 248, 255) !important; 
 }
 
 .show {
 	display: block;
 }
 
-/*.green {
-	color: rgb(0, 139, 0);
-}
-
-.yellow {
-	color: rgb(241, 185, 0);
-}
-
-.violet {
-	color: rgb(156, 0, 156);
-}
-
-.blue {
-	color: rgb(20, 138, 181);
-}*/
-
 /*submenu*/
 .submenu {
 	position: relative;
-	margin-top: .5rem;
 	list-style-type: none;
 	width: 100%;
 	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 	overflow: hidden;
 	display: none;
+}
+
+.submenu li {
+	margin-left: 0rem;
+}
+
+.submenu_li, .submenu_a {
+	font-size: .9rem !important;
 }
 
 .open_submenu {
@@ -121,3 +127,4 @@ body, html {
 .arrow_rotate {
 	transform: rotate(90deg);
 }
+

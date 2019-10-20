@@ -68,6 +68,7 @@
     <link rel="stylesheet" type="text/css" href="./css/login_style.css">
     <link rel="stylesheet" type="text/css" href="./css/nav_style.css">
     <script src="https://kit.fontawesome.com/99c8254f42.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <title>Hello, world!</title>
   </head>
