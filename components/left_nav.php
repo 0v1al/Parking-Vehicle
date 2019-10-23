@@ -18,7 +18,7 @@
 					<a class="link" href="./add_vehicle.php"><i class="fas fa-plus-square"></i><span class="a-txt">Add Vehicle</span></a>
 				</li>
 				<li class="submenu_toggler">
-					<a class="link sub" href="#"><i class="fas fa-tasks"></i><span class="a-txt">Manage Vehicle</<span><i class="fas fa-chevron-right arrow"></i></a>
+					<a class="link sub" href="#"><i class="fas fa-tasks"></i><span class="a-txt">Manage Vehicle</<span><i class="arr fas fa-chevron-right arrow"></i></a>
 					<ul class="submenu">
 						<li class="submenu_li">	
 							<a class="submenu_a link" href="./manage_vehicle.php"><i class="fas fa-list-alt"></i><span class="a-txt">Manage Vehicle</span></a>

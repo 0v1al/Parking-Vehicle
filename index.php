@@ -35,7 +35,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/left_nav_style.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/99c8254f42.js"></script>
-	<title></title>
+	<title>Dashboard</title>
 </head>
 <body>
 	<?php require './components/nav.php'; ?>

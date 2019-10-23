@@ -45,7 +45,7 @@
 	<?php require './components/nav.php' ?>
 	<?php require './components/nav_logout.php' ?>
 
-	<main class="row">
+	<main class="content row">
 		
 		<?php require './components/left_nav.php' ?>
 		

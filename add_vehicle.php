@@ -58,21 +58,21 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Add Vehicle Category</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="./css/left_nav_style.css">
+	<link rel="stylesheet" type="text/css" href="./css/left_nav_style.css">
 	<link rel="stylesheet" type="text/css" href="css/nav_style.css">
 	<link rel="stylesheet" type="text/css" href="css/nav_logout_style.css">
 	<link rel="stylesheet" type="text/css" href="css/add_vehicle.css">
 	<script src="https://kit.fontawesome.com/99c8254f42.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<title>Add Vehicle</title>
 </head>
 <body>
 
 	<?php require './components/nav.php' ?>
 	<?php require './components/nav_logout.php' ?>
 
-	<main class="row">
+	<main class="row content">
 		
 		<?php require './components/left_nav.php' ?>
 		

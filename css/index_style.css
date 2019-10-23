@@ -6,13 +6,22 @@
 	box-sizing: border-box;
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.7;
-	overflow: none;
+	overflow: hidden;
 }
 
 body, html {
 	/* background: rgb(245, 245, 245); */
 	background-image: linear-gradient(to right top, #ffffff, #fbfbfb, #f6f6f6, #f2f2f2, #eeeeee);
 	overflow: none;
+	height: 100%;
+}
+
+.nav_menu_left {
+	top: -1.75rem !important;
+}
+
+.content {
+	height: 100%;
 }
 
 /*admin icon form top-right and setting, logout, change password*/
@@ -123,6 +132,7 @@ body, html {
 
 .left_side {
 	margin-top: 0rem;
+	margin-bottom: 0rem;
 }
 
 .dashboard {

@@ -10,7 +10,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Add Vehicle Category</title>
+	<title>Manage Vehicle Category</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="./css/left_nav_style.css">
 	<link rel="stylesheet" type="text/css" href="css/nav_style.css">
@@ -24,7 +24,7 @@
 	<?php require './components/nav.php' ?>
 	<?php require './components/nav_logout.php' ?>
 
-	<main class="row">
+	<main class="content row">
 		
 		<?php require './components/left_nav.php' ?>
 		

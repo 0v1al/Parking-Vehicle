@@ -5,7 +5,7 @@ $(() => {
         $({count_number: $this.text()}).animate({
             count_number: count_to
         }, {
-            duration: 3000,
+            duration: 4000,
             easing: 'linear',
             step() {
                 $this.text(Math.floor(this.count_number));
