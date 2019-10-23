@@ -9,6 +9,7 @@
 	font-size: 1.1rem;
 	text-decoration: none;
 	color: rgb(20, 138, 181);
+	position: fixed;
 }
 
 .admin_icon_menu {

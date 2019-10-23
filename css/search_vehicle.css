@@ -13,6 +13,9 @@ body, html {
 
 .content{
 	height: 100%;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	min-width: 100rem;
 }
 
 /*dashboard*/
@@ -20,6 +23,7 @@ body, html {
 .side-right-container {
 	margin-top: 3rem;
 	margin-left: 2rem;
+	margin-left: 23%;
 }
 
 .dashboard_header {

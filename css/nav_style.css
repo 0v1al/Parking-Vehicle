@@ -12,6 +12,7 @@ nav {
 	padding: 0 3rem;
 	box-shadow: 0rem .1rem .3rem rgba(0, 0, 0, .1);
 	z-index: 1;
+	position: fixed;
 }
 
 nav .nav_logo {

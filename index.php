@@ -49,8 +49,10 @@
 	</span>
 
 	<main class="content row">
+		
 		<?php require './components/left_nav.php' ?>
-		<div class="col-md-10 left_side">
+
+		<div class="col-md-10 right_side">
 			<div class="dashboard">
 				<h1 class="dashboard_header">Dashboard</h1>
 				<div class="row container cars_info">
