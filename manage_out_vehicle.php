@@ -42,25 +42,23 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<?php 
-									$sql = "SELECT * FROM vehicle WHERE vehicle_status='Outgoing Vehicle'";
-									$res = mysqli_query($conn, $sql);
-									if (mysqli_num_rows($res) > 0) {
-										while ($row = mysqli_fetch_array($res)) {
-											$parking_number = $row['parking_number'];
-											$owner_name = $row['owner_name'];
-											$registration_number = $row['registration_number'];
-											echo "<td>$parking_number</td>
-													<td>$owner_name</td>
-													<td>$registration_number</td>
-													<td><a href='./view_out_vehicle.php?id=$parking_number'>View<a/> | <a href='./print_out_vehicle.php?id=$parking_number'>Print</a></td>";
-										}
-									} else {
-
+							<?php 
+								$sql = "SELECT * FROM vehicle WHERE vehicle_status='Outgoing Vehicle'";
+								$res = mysqli_query($conn, $sql);
+								if (mysqli_num_rows($res) > 0) {
+									while ($row = mysqli_fetch_array($res)) {
+										$parking_number = $row['parking_number'];
+										$owner_name = $row['owner_name'];
+										$registration_number = $row['registration_number'];
+										echo "<tr><td>$parking_number</td>
+												<td>$owner_name</td>
+												<td>$registration_number</td>
+												<td><a href='./view_out_vehicle.php?id=$parking_number'>View<a/> | <a href='./print_out_vehicle.php?id=$parking_number'>Print</a></td></tr>";
 									}
-								 ?>
-							</tr>
+								} else {
+									echo "<p class='text-center mt-4' style='color:red;'>There are no vehicle out!</p>";
+								}
+							?>
 						</tbody>
 					</table>
 				</div>

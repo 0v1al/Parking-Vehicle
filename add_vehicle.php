@@ -9,7 +9,7 @@
 	$res_category = mysqli_query($conn, $sql_category) or die(mysqli_error($conn));
 
 	const MIN_VALUE = 100000;
-	const MAX_VALUE = 900000;
+	const MAX_VALUE = 999999;
 
 	function clear ($data) {
 		$data = trim($data);
@@ -24,7 +24,7 @@
 		return array_slice($numbers, $from, 1);
 	}
 
-	$rand = uniqueRandomNumbers(MIN_VALUE, MAX_VALUE, 2);
+	$rand = uniqueRandomNumbers(MIN_VALUE, MAX_VALUE, 1);
 
 	if (isset($_POST['submit_vehicle'])) {
 		$vehicle_category = explode('|', $_POST['categories']);
@@ -33,6 +33,7 @@
 		$owner_name = ucwords(clear($_POST['owner_name']));
 		$owner_contact = clear($_POST['owner_contact']);
 		$income_date = date("Y-m-d");
+		$parking_number = uniqueRandomNumbers(MIN_VALUE, MAX_VALUE, 1);
 	
 		if (!is_numeric($registration_number) || !is_numeric($owner_contact)) {
 			array_push($login_error_message, "Please introduce the data corectly!");
@@ -44,7 +45,7 @@
 		if (empty($login_error_message)) {
 			array_push($login_error_message, "The vehicle was added!");
 			
-			$sql = "INSERT INTO vehicle VALUES(null, '$owner_name', '$registration_number', '$owner_contact', '$vehicle_category[1]', '$vehicle_company', '$income_date', DEFAULT, '', 0, 0)";
+			$sql = "INSERT INTO vehicle VALUES('$parking_number[0]', '$owner_name', '$registration_number', '$owner_contact', '$vehicle_category[1]', '$vehicle_company', '$income_date', DEFAULT, '', 0, 0)";
 
 			if (!mysqli_query($conn, $sql)) echo "Error: " . $sql . mysqli_error($conn);
 	
@@ -130,7 +131,7 @@
 								if (in_array("The vehicle was added!", $login_error_message)) {
 									echo "<span style='color:green'>The vehicle was added with success!</span>";
 								}
-							 ?>
+							?>
 						</form>
 				</div>
 			</div>
