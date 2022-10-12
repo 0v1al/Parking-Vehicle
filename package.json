@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/0v1al/container-bit-03#readme",
   "dependencies": {
-    "html2pdf.js": "^0.9.1",
-    "jspdf": "^1.5.3"
+    "html2pdf.js": "^0.10.1",
+    "jspdf": "^2.5.1"
   }
 }
